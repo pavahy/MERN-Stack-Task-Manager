@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const router = express.Router();
 const auth = require('../middleware/auth');
-const Task = require('../models/task');
+const Task = require('../models/Task');
 
 // 📊 Get task statistics
 router.get('/stats', auth, async (req, res) => {
