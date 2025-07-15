@@ -1,13 +1,11 @@
+// src/components/ProtectedRoute.jsx
 import React from 'react';
-import { Navigate, Outlet } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 
-const ProtectedRoute = ({ isAuthenticated, children }) => {
-  if (!isAuthenticated) {
-    return <Navigate to="/login" replace />;
-  }
-
-  // If children are passed, render them; otherwise render <Outlet />
-  return children ? children : <Outlet />;
+const ProtectedRoute = ({ children }) => {
+  const token = localStorage.getItem('token');
+  const isAuthenticated = token && token !== 'undefined';
+  return isAuthenticated ? children : <Navigate to="/login" replace />;
 };
 
 export default ProtectedRoute;
