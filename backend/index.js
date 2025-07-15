@@ -5,8 +5,13 @@ const cors = require('cors');
 
 const app = express();
 
+// ✅ CORS Configuration
+app.use(cors({
+  origin: 'https://mern-stack-task-manager-1-co4o.onrender.com', // 🔁 Replace with your actual frontend deployed URL
+  credentials: true
+}));
+
 // Middleware
-app.use(cors());
 app.use(express.json());
 
 // Health check route
