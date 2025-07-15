@@ -28,10 +28,10 @@
       }
   
       try {
-        const res = await api.post('/api/users/login', {
-    email,
-    password,
-        });
+       const res = await axios.post('https://mern-stack-task-manager-s8sd.onrender.com/api/users/login', {
+  email,
+  password,
+});
   
         const token = res.data.token;
   
