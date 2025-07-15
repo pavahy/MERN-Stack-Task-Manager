@@ -1,0 +1,5 @@
+{
+    "jwtSecret": "your-secret-key",
+    "dbUri": "mongodb+srv://taskuser:task1234@task-manager-db.0mgdtxy.mongodb.net/?retryWrites=true&w=majority&appName=task-manager-db"
+  }
+  

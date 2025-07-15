@@ -1,0 +1,110 @@
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #2C3E50;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sidebar-header h2 {
+  font-size: 24px;
+}
+
+.sidebar-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-links li {
+  margin: 20px 0;
+}
+
+.sidebar-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.sidebar-links li a:hover {
+  background-color: #34495E;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.main-content {
+  flex: 1;
+  background-color: #ECF0F1;
+  padding: 30px;
+}
+.logout-button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0;
+  font: inherit;
+  text-align: left;
+  font-size: 18px;
+}
+
+.logout-button:hover {
+  text-decoration: underline;
+}
+
+
+.header {
+  margin-bottom: 20px;
+}
+
+.header h2 {
+  font-size: 30px;
+  color: #34495E;
+}
+
+.dashboard-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #34495E;
+}
+
+.card p {
+  font-size: 24px;
+  color: #2C3E50;
+  font-weight: bold;
+}
+
+.task-list {
+  margin-top: 20px;
+}
+
+.task-list h3 {
+  font-size: 24px;
+  color: #34495E;
+}

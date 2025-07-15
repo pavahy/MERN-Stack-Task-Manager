@@ -1,0 +1,116 @@
+/* TaskForm container */
+.task-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background: #f4f7f6;
+  font-family: 'Segoe UI', sans-serif;
+  min-height: 100vh;
+}
+
+/* Title styling */
+.task-form h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Success and error message styling */
+.task-form p {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.task-form .success {
+  color: green;
+}
+
+.task-form .error {
+  color: red;
+}
+
+/* Form wrapper */
+.task-form form {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box; /* Prevents padding from causing overflow */
+}
+
+/* Input and Textarea styling */
+.task-form input, .task-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box; /* Prevents padding from causing overflow */
+  transition: border-color 0.2s ease;
+}
+
+/* Focus effect on input and textarea */
+.task-form input:focus, .task-form textarea:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Submit Button styling */
+.task-form button {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #3498db;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for submit button */
+.task-form button:hover {
+  background-color: #2980b9;
+}
+
+/* Styling for the 'Go to Dashboard' button */
+/* Styling for the 'Go to Dashboard' button */
+.task-form .go-to-dashboard {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #2ecc71;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  display: inline-block; /* ensures it's only as wide as content */
+  width: auto; /* overrides any inherited width */
+  max-width: 100%;
+}
+
+
+
+/* Hover effect for 'Go to Dashboard' button */
+.task-form .go-to-dashboard:hover {
+  background-color: #27ae60;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 600px) {
+  .task-form form {
+    padding: 1.5rem;
+    width: 90%;
+  }
+
+  .task-form h2 {
+    font-size: 1.6rem;
+  }
+}

@@ -1,0 +1,28 @@
+.task-item {
+  border-bottom: 1px solid #eee;
+  padding: 16px 0;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-status {
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.task-status.completed {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.task-status.pending {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
