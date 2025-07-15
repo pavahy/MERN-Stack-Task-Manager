@@ -13,7 +13,7 @@ const Login = () => {
   // ✅ Redirect to dashboard if already logged in
   useEffect(() => {
     const token = localStorage.getItem('token');
-    if (token) {
+    if (token && token !== 'undefined') {
       navigate('/dashboard');
     }
   }, [navigate]);
@@ -41,7 +41,7 @@ const Login = () => {
 
       localStorage.setItem('token', token);
 
-      // ✅ Redirect to dashboard after successful login
+      // ✅ Navigate to dashboard after login
       navigate('/dashboard');
     } catch (err) {
       const msg =
