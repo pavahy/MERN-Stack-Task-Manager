@@ -6,7 +6,7 @@ const cors = require('cors');
 const app = express();
 
 // ✅ CORS Configuration
-app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
+app.use(cors({ origin: 'https://mern-stack-task-manager-1-co4o.onrender.com', credentials: true }));
 
 
 // Middleware
