@@ -88,7 +88,7 @@ router.put('/id/:id', auth, async (req, res) => {
 });
 
 // ✅ Toggle completed status
-router.patch('/:id', auth, async (req, res) => {
+router.patch('/id/:id', auth, async (req, res) => {
   const taskId = req.params.id;
   const { completed } = req.body;
 
