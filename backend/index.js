@@ -6,10 +6,6 @@ const cors = require('cors');
 const app = express();
 
 // ✅ CORS Configuration — handles origin + preflight properly
-const allowedOrigins = [
-  'https://mern-stack-task-manager-1-co4o.onrender.com',
-  'http://localhost:3000' // add this if developing locally
-];
 
 const allowedOrigins = [
   'http://localhost:3000',
