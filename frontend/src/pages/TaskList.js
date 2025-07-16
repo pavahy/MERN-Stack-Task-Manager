@@ -8,8 +8,8 @@ const TaskList = () => {
     try {
       const token = localStorage.getItem('token');
       const res = await axios.get('http://localhost:5000/api/tasks', {
-        headers: { 'x-auth-token': token },
-      });
+  headers: { Authorization: `Bearer ${token}` },
+});
       setTasks(res.data);
     } catch (err) {
       console.error('Error fetching tasks:', err);
