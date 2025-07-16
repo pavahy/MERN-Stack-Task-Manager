@@ -11,6 +11,11 @@ const allowedOrigins = [
   'http://localhost:3000' // add this if developing locally
 ];
 
+const allowedOrigins = [
+  'http://localhost:3000',
+  'https://mern-stack-task-manager-1-co4o.onrender.com'
+];
+
 app.use(cors({
   origin: function (origin, callback) {
     if (!origin || allowedOrigins.includes(origin)) {
@@ -20,8 +25,6 @@ app.use(cors({
     }
   },
   credentials: true,
-  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
 }));
 
 
