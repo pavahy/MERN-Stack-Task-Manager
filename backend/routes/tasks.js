@@ -18,7 +18,7 @@ router.get('/stats', auth, async (req, res) => {
 });
 
 // 📄 Get a task by ID
-router.get('/id/:id', auth, async (req, res) => {
+router.get('/:id', auth, async (req, res) => {
   const taskId = req.params.id;
   if (!mongoose.Types.ObjectId.isValid(taskId)) {
     return res.status(400).json({ msg: 'Invalid task ID' });
@@ -62,7 +62,7 @@ router.post('/', auth, async (req, res) => {
 });
 
 // ✏️ Update task
-router.put('/id/:id', auth, async (req, res) => {
+router.put('/:id', auth, async (req, res) => {
   const taskId = req.params.id;
   if (!mongoose.Types.ObjectId.isValid(taskId)) {
     return res.status(400).json({ msg: 'Invalid task ID' });
@@ -117,7 +117,7 @@ router.patch('/:id', auth, async (req, res) => {
 });
 
 // ❌ Delete a task
-router.delete('/id/:id', auth, async (req, res) => {
+router.delete('/:id', auth, async (req, res) => {
   const taskId = req.params.id;
   if (!mongoose.Types.ObjectId.isValid(taskId)) {
     return res.status(400).json({ msg: 'Invalid task ID' });
