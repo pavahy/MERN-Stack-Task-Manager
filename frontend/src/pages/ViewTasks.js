@@ -42,7 +42,7 @@ const ViewTasks = () => {
     }
 
     try {
-      await axios.delete(`http://localhost:5000/api/tasks/id/${taskId}`, {
+      await axios.delete(`http://localhost:5000/api/tasks/${taskId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
 
