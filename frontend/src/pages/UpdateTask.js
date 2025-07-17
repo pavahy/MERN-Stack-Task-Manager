@@ -21,7 +21,7 @@ const UpdateTask = () => {
         }
 
         const response = await axios.get(
-          `http://localhost:5000/api/tasks/id/${id}`, // Use 'id' from URL
+          `http://localhost:5000/api/tasks/${id}`, // Use 'id' from URL
           {
             headers: { Authorization: `Bearer ${token}` },
           }
@@ -51,7 +51,7 @@ const UpdateTask = () => {
 
     try {
       await axios.put(
-        `http://localhost:5000/api/tasks/id/${id}`,  // Update task with 'id' from URL
+        `http://localhost:5000/api/tasks/${id}`,  // Update task with 'id' from URL
         { title, description },
         {
           headers: { Authorization: `Bearer ${token}` },
